@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&Style</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" class="hidden peer " id="menu-toggle">
+        <div class="flex  bg-red-500 justify-between p-3">
+            <div class="flex gap-2">
+                <img src="images/icons8-cachorro-32.png" alt="Logo, uma representação minimalista de um cachorro"
+                    class="min-w-10">
+                <span class="text-2xl font-bold text-white">Pet&Style</span>
+            </div>
+
+
+            <label for="menu-toggle" class="cursor-pointer max-w-7 md:hidden">
+                <img src="images/hamburger.png" alt="">
+            </label>
+
+
+
+        </div>
+        <div class="flex flex-col items-center bg-red-500 hidden peer-checked:flex p-2">
+            <a href="#hero" class="text-white hover:text-red-200 text-xl">Hero</a>
+            <a href="#produtos" class="text-white hover:text-red-200 text-xl">Produtos</a>
+            <a href="#depoimentos" class="text-white hover:text-red-200 text-xl">Depoimentos</a>
+            <a href="#contato" class="text-white hover:text-red-200 text-lg">Contato</a>
+        </div>
+    </header>
+    <main class="p-3">
+        <div id="hero" class="flex flex-col gap-4">
+            <h1 class="text-5xl text-center">Seu pet com <span class="text-red-400 font-bold">estilo</span> e <span
+                    class="text-red-400 font-bold">cuidado</span></h1>
+            <img src="https://placehold.co/600x400" alt="cachorro em um procedimento de tosa"
+                class="rounded-xl max-w-85 mx-auto md:max-w-125">
+
+        </div>
+
+        <div id="produtos" class="my-5 max-w-full">
+            <h2 class="text-2xl font-bold">Produtos</h2>
+            <div class="grid grid-cols-1 p-3 gap-10 md:gap-15 md:grid-cols-2 max-w-3xl mx-auto">
+
+                <div class="bg-red-50 max-w-full text-center rounded-xl">
+                    <img src="https://placehold.co/180x130" alt="Frasco de shampoo canino" class="w-full rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold" >Shampoo canino</h3>
+                     <p class="text-lg">Limpeza profunda e hidratação para o pelo do seu pet.</p>
+                    <button class="cursor-pointer bg-red-400 p-2 rounded-2xl hover:bg-red-500 m-3 text-lg">Saiba mais</button>
+                </div>
+
+                <div class="bg-red-50 max-w-full text-center rounded-xl">
+                    <img src="https://placehold.co/180x130" alt="Frasco de condicionador pelos macios" class="w-full rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold"> Condicionador Pelos Macios</h3>
+                    <p class="text-lg"> Desembaraça os pelos deixando um perfume suave e duradouro.</p>
+                    <button class="cursor-pointer bg-red-400 p-2 rounded-2xl hover:bg-red-500 m-3 text-lg">Saiba mais</button>
+                </div>
+
+                <div class="bg-red-50 max-w-full text-center rounded-xl">
+                    <img src="https://placehold.co/180x130" alt="Escova rasqueadeira para cachorros" class="w-full rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold">Escova Rasqueadeira</h3>
+                    <p class="text-lg">Remove os pelos mortos sem machucar a pele sensível do cachorro.</p>
+                    <button class="cursor-pointer bg-red-400 p-2 rounded-2xl hover:bg-red-500 m-3 text-lg">Saiba mais</button>
+                </div>
+
+                <div class="bg-red-50 max-w-full text-center  rounded-xl">
+                    <img src="https://placehold.co/180x130" alt="Pacote de petisco natural premium" class="w-full rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold">Petisco Natural Premium</h3>
+                    <p class="text-lg">Snack saudável e crocante ideal para o adestramento diário.</p>
+                    <button class="cursor-pointer bg-red-400 p-2 rounded-2xl hover:bg-red-500 m-3 text-lg">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="depoimentos">
+            <h2 class="font-bold text-2xl m-2">Depoimentos</h2>
+            
+        </div>
+        <figure class="bg-red-100 p-3 rounded-lg mb-5 md:max-w-200 md:mx-auto">
+         <blockquote>
+             <p class="text-center">"As roupinhas da Pet&Style são lindas e o material é super confortável. Meu pet adorou!"
+    </p>
+         </blockquote>
+         <figcaption class="text-gray-600 font-light">— <cite>Fernanda Lima</cite></figcaption>
+        </figure>
+        <figure class="bg-red-100 p-3 rounded-lg mb-5 md:max-w-200 md:mx-auto">
+         <blockquote>
+             <p class="text-center">Peitorais resistentes e com muito estilo. A entrega foi rápida e o atendimento excelente.
+    </p>
+         </blockquote>
+         <figcaption class="text-gray-600 font-light">— <cite>Bruno Alencar</cite></figcaption>
+        </figure>
+        <figure class="bg-red-100 p-3 rounded-lg mb-5 md:max-w-200 md:mx-auto">
+         <blockquote>
+             <p class="text-center">"A caminha nova combinou perfeitamente com a casa. Qualidade impecável, recomendo muito!"
+
+    </p>
+         </blockquote>
+         <figcaption class="text-gray-600 font-light">— <cite>Amanda Costa</cite></figcaption>
+        </figure>
+
+        <div id="contato" class="flex flex-col gap-3">
+            <h2 class="font-bold text-2xl mb-2">Contato</h2>
+            <p>Nosso email: <span class="font-bold text-lg">contato@petandstyle.com.br </span></p>
+            <p>Nosso telefone: <span class="font-bold text-lg">(11) 99999-9999 </span></p>
+
+            <form action="" id="formulario" class="flex flex-col gap-1">
+                <label for="nome">Seu nome: </label>
+                <input type="text" id="nome" class="bg-red-100 p-1 rounded-lg md:p-2">
+                <label for="email">Seu email: </label>
+                <input type="email" id="email" class="bg-red-100 p-1 rounded-lg md:p-2" required>
+
+                <button class="p-2 bg-red-300 rounded-lg my-2 hover:bg-red-400 cursor-pointer">Inscrever-se</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event){
+            event.preventDefault()
+            console.log("Dados prontos para envio");
+            alert(`Inscrição concluida! \nContinue acompanhando em seu e-mail`)
+        })
+    </script>
+</body>
+
+</html>
